@@ -74,6 +74,23 @@
     margin-left:45px;
 }
 
+#carousel {
+    display:flex;
+    justify-content:center;
+    
+}
+
+#discountCarousel {
+    margin-top:25px;
+    margin-bottom:45px;
+    
+    width:380px;
+}
+
+#discountCarousel > .carousel-indicators {
+    margin-bottom:0;
+    }
+
 /*.scroll {
     width: 100%;
 }
