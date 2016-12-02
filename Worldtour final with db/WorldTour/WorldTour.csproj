@@ -196,6 +196,7 @@
     <Compile Include="Models\BTViewModel.cs" />
     <Compile Include="Models\CheckoutViewModel.cs" />
     <Compile Include="Models\Flights.cs" />
+    <Compile Include="Models\SearchViewModel.cs" />
     <Compile Include="Models\Tickets.cs" />
     <Compile Include="Models\WorldTourContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
