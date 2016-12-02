@@ -1,0 +1,26 @@
+﻿@model WorldTour.Models.CheckoutViewModel
+@{
+    ViewBag.Title = "Completion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="margin-top:200px;">
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2 class="panel-title"> Completion</h2>
+    </div>
+            <p>Your purchase has been successfully completed. An email with the booking information will be sent to you soon.</p>
+    </div>
+            <br />
+
+            @{
+                if (Model.errmessage != "")
+                {
+                    <p style="color:red; font-weight:700;">@Model.errmessage</p>
+                }
+            }
+
+            <a href="@Url.Action("Index", "Home")" style="color:yellow; margin:15px;">Return to our homepage.</a>
+</div>
+
+<div style="position: absolute;right: 0;bottom: 0;left: 0;padding: 1rem;">@RenderPage("~/Views/Shared/_footer.cshtml")</div>
