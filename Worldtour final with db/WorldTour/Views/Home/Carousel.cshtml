@@ -1,0 +1,50 @@
+﻿<div id="discountCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators" style="z-index:1 !important">
+        <li data-target="#discountCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#discountCarousel" data-slide-to="1"></li>
+        <li data-target="#discountCarousel" data-slide-to="2"></li>
+        <li data-target="#discountCarousel" data-slide-to="3"></li>
+        <li data-target="#discountCarousel" data-slide-to="4"></li>
+        <li data-target="#discountCarousel" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <a href="@Url.Action("Offers", "Home", new { depCity = "Athens", arrCity = "London", startDate = new DateTime(2016, 12, 8), endDate = new DateTime (2016, 12, 25) } )" title="London">
+                <img alt="London" src="@Url.Content("~/Content/London.jpg")">
+            </a>
+        </div>
+        <div class="item">
+            <a href="@Url.Action("Offers", "Home", new { depCity = "Athens", arrCity = "Prague", startDate = new DateTime(2016, 11, 22), endDate = new DateTime (2016, 11, 29) } )" title="Prague">
+                <img alt="Prague" src="@Url.Content("~/Content/prague.jpg")">
+            </a>
+        </div>
+        <div class="item">
+            <a href="@Url.Action("Offers", "Home", new { depCity = "Athens", arrCity = "Rome", startDate = new DateTime(2016, 12, 10), endDate = new DateTime (2016, 12, 25) } )" title="Rome">
+                <img alt="Rome" src="@Url.Content("~/Content/Rome.jpg")">
+            </a>
+        </div>
+        <div class="item">
+            <a href="@Url.Action("Offers", "Home", new {depCity = "Athens", arrCity = "Rovaniemi", startDate = new DateTime(2016, 12, 24), endDate = new DateTime (2016, 12, 31) } )" title="Rovaniemi">
+                <img alt="Rovaniemi" src="@Url.Content("~/Content/robaniemi.jpg")">
+            </a>
+        </div>
+        <div class="item">
+            <a href="@Url.Action("Offers", "Home", new { depCity = "Athens", arrCity = "Vienna", startDate = new DateTime(2016, 11, 28), endDate = new DateTime (2016, 12, 15) } )" title="Vienna">
+                <img alt="Vienna" src="@Url.Content("~/Content/biennh.jpg")">
+            </a>
+        </div>
+        <div class="item">
+            <a href="@Url.Action("Offers", "Home", new { depCity = "Athens", arrCity = "Dubai", startDate = new DateTime(2016, 12, 1), endDate = new DateTime (2016, 12, 31) } )" title="Dubai">
+                <img alt="Dubai" src="@Url.Content("~/Content/dubai.jpg")">
+            </a>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#discountCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#discountCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
