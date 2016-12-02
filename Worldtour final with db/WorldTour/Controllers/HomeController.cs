@@ -181,6 +181,11 @@ namespace WorldTour.Controllers
             return View("Search");
         }
 
+        public ActionResult AllOffers()
+        {
+            return View();
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

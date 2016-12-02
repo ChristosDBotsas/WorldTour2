@@ -218,6 +218,7 @@
     <Content Include="Views\Bookings\Completion.cshtml" />
     <Content Include="Views\Shared\_header.cshtml" />
     <Content Include="Views\Home\Carousel.cshtml" />
+    <Content Include="Views\Home\AllOffers.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

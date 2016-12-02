@@ -199,3 +199,4 @@ C:\Users\Christos\Documents\GitHub\WorldTour2\Worldtour final with db\WorldTour\
 C:\Users\Christos\Documents\GitHub\WorldTour2\Worldtour final with db\WorldTour\bin\System.Web.Mvc.xml
 C:\Users\Christos\Documents\GitHub\WorldTour2\Worldtour final with db\WorldTour\obj\Debug\WorldTour.dll
 C:\Users\Christos\Documents\GitHub\WorldTour2\Worldtour final with db\WorldTour\obj\Debug\WorldTour.pdb
+C:\Users\Christos\Documents\GitHub\WorldTour2\Worldtour final with db\WorldTour\obj\Debug\WorldTour.csprojResolveAssemblyReference.cache
