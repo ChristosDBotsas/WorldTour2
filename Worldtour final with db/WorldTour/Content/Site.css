@@ -74,16 +74,18 @@
     margin-left:45px;
 }
 
-/*.scroll {
-    width: 100%;
+#carousel {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
 }
-    
-.bodyscroll {
-    height: 300px;       
-    overflow-y: auto;    
-    overflow-x: hidden;  
-    display: inline-block;
-    width: 100%;
-    margin:auto;
+
+#discountCarousel {
+    margin-top:25px;
+    margin-bottom:45px;
+    width:380px;
 }
-*/
+
+#discountCarousel > .carousel-indicators {
+    margin-bottom:0;
+    }

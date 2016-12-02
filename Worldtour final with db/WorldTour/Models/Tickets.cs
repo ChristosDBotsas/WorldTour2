@@ -14,13 +14,13 @@ namespace WorldTour.Models
         public int BookingID { get; set; }
 
         [Required]
-        [StringLength(60, MinimumLength = 2, ErrorMessage = "Name must be at least 2 characters long.")]
-        [RegularExpression(@"^[a-zA-Z]*$", ErrorMessage = "Name can only have English letters.")]
+        [StringLength(60, MinimumLength = 2)]
+        [RegularExpression(@"^[a-zA-Z]*$")]
         public string FirstName { get; set; }
 
         [Required]
-        [StringLength(60, MinimumLength = 2, ErrorMessage = "Name must be at least 2 characters long.")]
-        [RegularExpression(@"^[a-zA-Z]*$", ErrorMessage = "Name can only have English letters.")]
+        [StringLength(60, MinimumLength = 2)]
+        [RegularExpression(@"^[a-zA-Z]*$")]
         public string LastName { get; set; }
 
         public virtual Booking Booking { get; set; }

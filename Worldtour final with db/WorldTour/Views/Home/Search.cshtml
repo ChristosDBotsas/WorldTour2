@@ -1,4 +1,4 @@
-﻿@model WorldTour.Models.SearchViewModel
+﻿@model WorldTour.Models.Flights
 
 @{
     ViewBag.Title = "Search";
@@ -6,19 +6,19 @@
 }
 
 <section id="searchBar">
-    @RenderPage("~/Views/Home/SearchBarPartial.cshtml", Model)
+    @RenderPage("~/Views/Home/SearchBarPartial.cshtml")
 </section>
 
 <section id="results">
     <p style="text-align:center; font-weight:700; font-size:20px">
-        Your search was for @Model.adults adults <text> and </text> @Model.children <text> children, on @Model.classType class.</text>
+        Your search was for @ViewBag.Adults adults <text> and </text> @ViewBag.Children <text> children, on @ViewBag.ClassType class.</text>
     </p>
     @using (Html.BeginForm("Search", "Home"))
             {
         <div id="table-wrapper">
             <div id="table-scroll">
 
-                <table class="table table-hover table-responsive">
+                <table>
                     <thead>
                     <tr>
                         <th><span class="text">Departure</span></th>
@@ -33,18 +33,18 @@
                  </thead>
                  <tbody>
                     @{
-                        if (Model.resultsGo.Count() >= 0)
+                        if (ViewBag.ResultsGo != null)
                         {
                             <tr>
                                 <th colspan="8" style="text-align:center; font-size:20px; text-decoration:underline;">Departure Flights</th>
                             </tr>
 
                             int a = 0;
-                            foreach (var res in Model.resultsGo)
+                            foreach (var res in (ViewBag.ResultsGo as IEnumerable<WorldTour.Models.Flights>))
                             {
                                 a++;
                                 decimal price;
-                                switch (Model.classType)
+                                switch ((string)ViewBag.ClassType)
                                 {
                                     case "First":
                                         price = res.Starting_Price * 2;
@@ -63,28 +63,28 @@
                                     <td>@res.Arrival_Date.ToString("dd/MM/yyyy h:mm tt")</td>
                                     <td>@res.Company_Name</td>
                                     <td>@res.Available_Seats</td>
-                                    <td>@Math.Round(price * (decimal)Model.adults + price * (decimal)Model.children * (decimal)0.5, 2)<text>&nbsp;&euro;</text></td>
+                                    <td>@Math.Round(price * ViewBag.Adults + price * ViewBag.Children * (decimal)0.5, 2)<text>&nbsp;&euro;</text></td>
                                     <td><input type="radio" name="goFlight" value="@res.FlightID" required onclick="revealBook('bookButton')" /></td>
                                 </tr>
                             }
                             if (a == 0)
                             {
-                                <tr><td colspan="8" style="text-align:center; font-weight:700">There is no available departure flight</td></tr>
+                                <tr><td>There is no available departure flight</td></tr>
                             }
                         }
 
-                        if (Model.resultsReturn.Count() > 0)
+                        if (ViewBag.ResultsReturn != null)
                         {
                             <tr>
                                 <th colspan="8" style="text-align:center; font-size:20px; text-decoration:underline;">Return Flights</th>
                             </tr>
 
                             int b = 0;
-                            foreach (var res in Model.resultsReturn)
+                            foreach (var res in (ViewBag.ResultsReturn as IEnumerable<WorldTour.Models.Flights>))
                             {
                                 b++;
                                 decimal price;
-                                switch (Model.classType)
+                                switch ((string)ViewBag.ClassType)
                                 {
                                     case "First":
                                         price = res.Starting_Price * 2;
@@ -103,13 +103,13 @@
                                     <td>@res.Arrival_Date.ToString("dd/MM/yyyy h:mm tt")</td>
                                     <td>@res.Company_Name</td>
                                     <td>@res.Available_Seats</td>
-                                    <td>@Math.Round(price * (decimal)Model.adults + price * (decimal)Model.children * (decimal)0.5, 2)<text>&nbsp;&euro;</text></td>
+                                    <td>@Math.Round(price * ViewBag.Adults + price * ViewBag.Children * (decimal)0.5, 2)<text>&nbsp;&euro;</text></td>
                                     <td><input type="radio" name="returnFlight" value="@res.FlightID" required onclick="revealBook('bookButton')" /></td>
                                 </tr>
                             }
                             if (b == 0)
                             {
-                                <tr><td colspan="8" style="text-align:center; font-weight:700">There is no available return flight</td></tr>
+                                <tr><td>There is no available return flight</td></tr>
                             }
                         }
                     }
@@ -117,16 +117,17 @@
                 </table>
                 </div>
             </div>
-                <input type="hidden" name="classType" value="@Model.classType" />
-                <input type="hidden" name="children" value="@Model.children" />
-                <input type="hidden" name="adults" value="@Model.adults" />
-                <input type="submit" value="Book Now!" class="btn btn-success btn-lg" style="margin-top:20px;margin-bottom:15px;display:none" name="bookButton" id="bookButton" />
+                <input type="hidden" name="classType" value="@ViewBag.ClassType" />
+                <input type="hidden" name="children" value="@ViewBag.Children" />
+                <input type="hidden" name="adults" value="@ViewBag.Adults" />
+                <input type="submit" value="Book Now!" class="btn btn-success btn-lg" style="margin-top:20px;margin-bottom:15px;" name="bookButton" id="bookButton" hidden />
                 }
     </section>
+<div style="width:100%">@RenderPage("~/Views/Shared/_footer.cshtml")</div>
 
 <script type="text/javascript">
     function revealBook(id) {
-        var g = document.getElementById('bookButton');
+        var g = document.getElementById(id);
         g.style.display = ((g.style.display == 'none') ? 'block' : 'block');
     }
 </script>

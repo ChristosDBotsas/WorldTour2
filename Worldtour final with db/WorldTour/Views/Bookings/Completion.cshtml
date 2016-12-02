@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div style="margin-top:200px; margin-bottom:200px;">
+<div style="margin-top:200px;">
 <div class="panel panel-primary">
     <div class="panel-heading">
         <h2 class="panel-title"> Completion</h2>
@@ -22,3 +22,5 @@
 
             <a href="@Url.Action("Index", "Home")" style="color:yellow; margin:15px;">Return to our homepage.</a>
 </div>
+
+<div style="position: absolute;right: 0;bottom: 0;left: 0;padding: 1rem;">@RenderPage("~/Views/Shared/_footer.cshtml")</div>

@@ -27,8 +27,8 @@ namespace WorldTour.Models
         public int Quantity { get; set; }
 
         [Required]
-        [StringLength(60, MinimumLength = 2, ErrorMessage = "Name must be at least 2 characters long.")]
-        [RegularExpression(@"^[a-zA-Z\s]*$", ErrorMessage = "Name can only have English letters.")]
+        [StringLength(60, MinimumLength = 2)]
+        [RegularExpression(@"^[a-zA-Z\s]*$")]
         public string BookingName { get; set; }
 
         [Required]
@@ -36,7 +36,7 @@ namespace WorldTour.Models
         public string Email { get; set; }
 
         [Phone]
-        [RegularExpression(@"^[0-9]{7,25}$", ErrorMessage = "Phone must be at least 7 numbers.")]
+        [RegularExpression(@"^[0-9]{7,25}$")]
         public string Phone { get; set; }
         public int Children { get; set; }
     }

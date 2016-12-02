@@ -135,7 +135,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\dubai.jpg" />
-    <Content Include="Content\logo.jpg" />
     <Content Include="Content\London.jpg" />
     <Content Include="Content\prague.jpg" />
     <Content Include="Content\robaniemi.jpg" />
@@ -153,7 +152,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <None Include="Properties\PublishProfiles\WorldTourProject - Web Deploy.pubxml" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -198,8 +196,6 @@
     <Compile Include="Models\BTViewModel.cs" />
     <Compile Include="Models\CheckoutViewModel.cs" />
     <Compile Include="Models\Flights.cs" />
-    <Compile Include="Models\SearchBarViewModel.cs" />
-    <Compile Include="Models\SearchViewModel.cs" />
     <Compile Include="Models\Tickets.cs" />
     <Compile Include="Models\WorldTourContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -221,6 +217,8 @@
     <Content Include="Views\Bookings\Checkout.cshtml" />
     <Content Include="Views\Bookings\Completion.cshtml" />
     <Content Include="Views\Shared\_header.cshtml" />
+    <Content Include="Views\Home\Carousel.cshtml" />
+    <Content Include="Views\Home\AllOffers.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
