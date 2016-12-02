@@ -18,10 +18,13 @@ namespace WorldTour.Controllers
         public ActionResult Index()
         {
             var flights = db.Flights.Select(x => x);
-            ViewBag.departuresList = flights.Select(x => x.Departure_Airport).Distinct();
-            ViewBag.destinationsList = flights.Select(x => x.Arrival_Airport).Distinct();
 
-            return View();
+            var searchVM = new SearchViewModel()
+            {
+                departuresList = flights.Select(x => x.Departure_Airport).Distinct().ToList(),
+                destinationsList = flights.Select(x => x.Arrival_Airport).Distinct().ToList()
+            };          
+            return View(searchVM);
         }
 
         [HttpGet]
@@ -30,24 +33,24 @@ namespace WorldTour.Controllers
             children = children ?? 0;
             adults = adults ?? 1;
 
-            if (String.IsNullOrEmpty(departureCity) || String.IsNullOrEmpty(destinationCity))
+            if (String.IsNullOrEmpty(departureCity) || String.IsNullOrEmpty(destinationCity) || String.IsNullOrEmpty(departureDate))
             {
-                ModelState.AddModelError("", "Departure, Destination and Number of Persons are required fields");
+                ModelState.AddModelError("", "Departure City, Destination City and Departure Date are required fields");
                 var flights = db.Flights.Select(x => x);
-                ViewBag.departuresList = flights.Select(x => x.Departure_Airport).Distinct();
-                ViewBag.destinationsList = flights.Select(x => x.Arrival_Airport).Distinct();
-                return View();
+                var searchVM = new SearchViewModel()
+                {
+                    departuresList = flights.Select(x => x.Departure_Airport).Distinct().ToList(),
+                    destinationsList = flights.Select(x => x.Arrival_Airport).Distinct().ToList()
+                };
+
+                return View(searchVM);
             }
 
             else
             {
                 var results = db.Flights.Select(x => x);
-                
-                ViewBag.departuresList = results.Select(x => x.Departure_Airport).Distinct();
-                ViewBag.destinationsList = results.Select(x => x.Arrival_Airport).Distinct();
-                ViewBag.ClassType = classType;
-                ViewBag.Adults = adults;
-                ViewBag.Children = children;
+                List<Flights> resultsGo = new List<Flights>();
+                List<Flights> resultsReturn = new List<Flights>();
 
                 DateTime datevalue;
                 DateTime dep;
@@ -71,51 +74,42 @@ namespace WorldTour.Controllers
 
                 if (String.IsNullOrEmpty(returnDate))
                     {
-                        if (String.IsNullOrEmpty(destinationCity) && (children + adults) > 0 && !String.IsNullOrEmpty(departureDate))
-                        {
-                            results = results.OrderBy(x => x.Departure_Date).
-                                              Where(x => x.Departure_Airport == departureCity &&
-                                              x.Available_Seats >= (children + adults) &&
-                                              DbFunctions.TruncateTime(x.Departure_Date) == DbFunctions.TruncateTime(dep));
-                        }
-                        else if (!String.IsNullOrEmpty(destinationCity) && (children + adults) > 0)
-                        {
-                            if (String.IsNullOrEmpty(departureDate))
-                            {
-                                results = results.OrderBy(x => x.Departure_Date).
-                                             Where(x => x.Departure_Airport == departureCity &&
-                                             x.Arrival_Airport == destinationCity &&
-                                             x.Available_Seats >= (children + adults));
-                            }
-                            else
-                            {
-                                results = results.OrderBy(x => x.Departure_Date).
-                                                  Where(x => x.Departure_Airport == departureCity &&
-                                                  x.Arrival_Airport == destinationCity &&
-                                                  x.Available_Seats >= (children + adults) &&
-                                                  DbFunctions.TruncateTime(x.Departure_Date) == DbFunctions.TruncateTime(dep));
-                            }
-                        }
-                        ViewBag.ResultsGo = results;
+                       resultsGo = results.OrderBy(x => x.Departure_Date).
+                                         Where(x => x.Departure_Airport == departureCity &&
+                                         x.Arrival_Airport == destinationCity &&
+                                         x.Available_Seats >= (children + adults) &&
+                                         DbFunctions.TruncateTime(x.Departure_Date) == DbFunctions.TruncateTime(dep) &&
+                                         DbFunctions.TruncateTime(x.Departure_Date) >= DateTime.Today).ToList();               
                     }
                     else
                     {
-                        var resultsGo = results.OrderBy(x => x.Departure_Date)
+                        resultsGo = results.OrderBy(x => x.Departure_Date)
                                           .Where(x => x.Departure_Airport == departureCity &&
                                            x.Arrival_Airport == destinationCity &&
                                            x.Available_Seats >= (children + adults) &&
-                                           DbFunctions.TruncateTime(x.Departure_Date) == DbFunctions.TruncateTime(dep));
+                                           DbFunctions.TruncateTime(x.Departure_Date) == DbFunctions.TruncateTime(dep) &&
+                                           DbFunctions.TruncateTime(x.Departure_Date) >= DateTime.Today).ToList();
 
-                        var resultsReturn = results.OrderBy(x => x.Departure_Date)
+                        resultsReturn = results.OrderBy(x => x.Departure_Date)
                                                     .Where(x => x.Departure_Airport == destinationCity &&
                                                      x.Arrival_Airport == departureCity &&
                                                      x.Available_Seats >= (children + adults) &&
-                                                     DbFunctions.TruncateTime(x.Departure_Date) == DbFunctions.TruncateTime(ret));
-
-                        ViewBag.ResultsGo = resultsGo;
-                        ViewBag.ResultsReturn = resultsReturn;
+                                                     DbFunctions.TruncateTime(x.Departure_Date) == DbFunctions.TruncateTime(ret) &&
+                                                     DbFunctions.TruncateTime(x.Departure_Date) >= DateTime.Today).ToList();
                     }
-                return View(); 
+
+                var searchVM = new SearchViewModel()
+                {
+                    adults = (int)adults,
+                    children = (int)children,
+                    classType = classType,
+                    resultsGo = resultsGo,
+                    resultsReturn = resultsReturn,
+                    departuresList = db.Flights.Select(x => x.Departure_Airport).Distinct().ToList(),
+                    destinationsList = db.Flights.Select(x => x.Arrival_Airport).Distinct().ToList()
+                };
+
+                return View(searchVM); 
             }
         }
 
@@ -159,31 +153,39 @@ namespace WorldTour.Controllers
         public ActionResult Offers(string depCity, string arrCity, DateTime startDate, DateTime endDate)
         {
 
-            ViewBag.ResultsGo = db.Flights.Where(x => x.Departure_Airport == depCity
+            var resultsGo = db.Flights.Where(x => x.Departure_Airport == depCity
                                 && x.Arrival_Airport == arrCity
-                                && DbFunctions.TruncateTime(x.Departure_Date) >= DbFunctions.TruncateTime(startDate)
+                                && DbFunctions.TruncateTime(x.Departure_Date) >= (DbFunctions.TruncateTime(startDate))
+                                && DbFunctions.TruncateTime(x.Departure_Date) >= DateTime.Today
                                 && DbFunctions.TruncateTime(x.Departure_Date) <= DbFunctions.TruncateTime(endDate)
-                                && x.Available_Seats >= 2);
+                                && x.Available_Seats >= 2).ToList();
 
-            ViewBag.ResultsReturn = db.Flights.Where(x => x.Departure_Airport == arrCity
+            var resultsReturn = db.Flights.Where(x => x.Departure_Airport == arrCity
                                 && x.Arrival_Airport == depCity
                                 && DbFunctions.TruncateTime(x.Departure_Date) >= DbFunctions.TruncateTime(startDate)
+                                && DbFunctions.TruncateTime(x.Departure_Date) >= DateTime.Today
                                 && DbFunctions.TruncateTime(x.Departure_Date) <= DbFunctions.TruncateTime(endDate)
-                                && x.Available_Seats >= 2);
+                                && x.Available_Seats >= 2).ToList();
 
             var flights = db.Flights.Select(x => x);
-            ViewBag.departuresList = flights.Select(x => x.Departure_Airport).Distinct();
-            ViewBag.destinationsList = flights.Select(x => x.Arrival_Airport).Distinct();
-            ViewBag.Adults = 2;
-            ViewBag.Children = 0;
-            ViewBag.ClassType = "Economy";
+            
+            var searchVM = new SearchViewModel()
+            {
+                adults = 2,
+                children = 0,
+                classType = "Economy",
+                resultsGo = resultsGo,
+                resultsReturn = resultsReturn,
+                departuresList = db.Flights.Select(x => x.Departure_Airport).Distinct().ToList(),
+                destinationsList = db.Flights.Select(x => x.Arrival_Airport).Distinct().ToList()
+            };
 
-            return View("Search");
+            return View("Search", searchVM);
         }
 
-        public ActionResult AllOffers()
+        public JsonResult GetDestinationCities()
         {
-            return View();
+
         }
 
         protected override void Dispose(bool disposing)

@@ -1,71 +1,92 @@
 ﻿@using (Html.BeginForm("Search", "Home", FormMethod.Get))
 {
     @Html.ValidationSummary(false, null, new { @class = "alert-danger" })
-    <table class="table" style="text-align:center">
-        <tr>
-            <td>
-                From:<br />
-                <input type="search" placeholder="Departure" class="form-control" name="departureCity" id="departureCity" list="fromList" required onclick="clearBox()"/>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-3 col-sm-12">
+                <label>
+                    From:
+                </label><br />
+                <input type="search" placeholder="Departure" class="form-control" name="departureCity" id="departureCity" list="fromList" required onclick="clearBox()" />
                 <datalist id="fromList">
                     @{
-                        foreach (var dep in ViewBag.departuresList)
+                        foreach (var dep in Model.departuresList)
                         {
                             <option value="@dep">@dep</option>
                         }
                     }
                 </datalist>
-            </td>
+            </div>
 
-            <td>
-                To:<br />
-                <input type="search" placeholder="Destination" class="form-control" name="destinationCity" id="destinationCity" list="toList" required onclick="clearBox()"/>
+
+
+            <div class="col-md-3 col-sm-12" style="margin:auto">
+                <label>
+                    To:
+                </label>
+                <br />
+                <input type="search" placeholder="Destination" class="form-control" name="destinationCity" id="destinationCity" list="toList" required onclick="clearBox()" />
                 <datalist id="toList">
                     @{
-                        foreach (var des in ViewBag.destinationsList)
+                        foreach (var des in Model.destinationsList)
                         {
                             <option value="@des">@des</option>
                         }
                     }
                 </datalist>
-            </td>
+            </div>
 
-            <td>
-                No. of Adults:<br />
-                <input type="number" min="1" step="1" placeholder="No. of Adults" name="adults" id="adults" value="1" required onclick="clearBox()" class="form-control"/>
-            </td>
-            <td>
-                No. of Children:<br />
-                <input type="number" min="0" step="1" placeholder="No. of Children" name="children" id="children" class="form-control"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Departure Date: <br />
-                <input type="text" name="departureDate" class="form-control" min="@DateTime.Today.ToString("yyyy-MM-dd")" id="dp_a"/>
-            </td>
+            <div class="col-md-3 col-sm-12" style="margin:auto">
+                <label>
+                    No. of Adults:
+                </label><br />
+                <input type="number" min="1" step="1" placeholder="No. of Adults" name="adults" id="adults" value="1" required onclick="clearBox()" class="form-control" />
+            </div>
+            <div class="col-md-3 col-sm-12" style="margin:auto">
+                <label>
+                    No. of Children:
+                </label><br />
+                <input type="number" min="0" step="1" placeholder="No. of Children" name="children" id="children" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="margin-bottom:20px;">
+            <div class="col-md-3 col-sm-12" style="margin:auto">
+                <label>
+                    Departure Date:
+                </label><br />
+                <input type="text" name="departureDate" class="form-control" min="@DateTime.Today.ToString("yyyy-MM-dd")" id="dp_a" required onclick="clearBox()"/>
+            </div>
 
-            <td id="returnDate" hidden>
-                Return Date: <br />
-                <input type="text" placeholder="Select departure date first" class="form-control" name="returnDate" min="@DateTime.Today.ToString("yyyy-MM-dd")" id="dp_b"/>
-            </td>
+            <div class="col-md-3 col-sm-12" style="margin:auto" id="return">
+                <input type="button" class="btn btn-block" value="Return Flight?" name="returnCheck" id="returnCheck" onclick="reveal('returnDate')" style="margin-top:25px; background-color:#7cc4f5; color:white; font-weight:700" />
+            </div>
 
-            <td>
-                Return Flight?
-                <input type="checkbox" name="returnCheck" onclick="reveal('returnDate')"/>
-            </td>
-            <td>
-                Class:
+            <div class="col-md-3 col-sm-12" id="returnDate" hidden style="margin:auto">
+                <label>
+                    Return Date:
+                </label><br />
+                <input type="text" placeholder="Select departure date first" class="form-control" name="returnDate" min="@DateTime.Today.ToString("yyyy-MM-dd")" id="dp_b" />
+            </div>
+
+            <div class="col-md-3 col-sm-12" style="margin:auto">
+                <label>
+                    Class:
+                </label>
                 <select name="classType" class="form-control">
                     <option selected value="Economy">Economy</option>
                     <option value="First">First</option>
                     <option value="Business">Business</option>
                 </select>
-            </td>
-        </tr>
-    </table>
-    <input type="submit" value="Search Now!" id="searchButton" name="searchButton" onclick="emptyText()" class="btn btn-primary"/>
-    <input type="reset" value="Clear fields" id="resetButton" name="resetButton" class="btn btn-primary"/>
-}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12" style="margin:auto; text-align:center">
+        <input type="submit" value="Search Now!" id="searchButton" name="searchButton" onclick="emptyText()" class="btn btn-primary" />
+        <input type="reset" value="Clear fields" id="resetButton" name="resetButton" class="btn btn-primary" />
+    </div>
+                    }
 
 <script type="text/javascript" src="~/scripts/myScript.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
