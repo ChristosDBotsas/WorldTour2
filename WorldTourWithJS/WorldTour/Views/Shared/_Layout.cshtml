@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>@RenderPage("~/Views/Shared/_header.cshtml")</div>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <div>
+        @RenderPage("~/Views/Shared/_footer.cshtml")
+    </div>
+</body>
+</html>

@@ -1,0 +1,252 @@
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\ApplicationInsights.config
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\csc.exe
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\vbc.exe
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\VBCSCompiler.exe
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\WorldTour.dll.config
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\WorldTour.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\WorldTour.pdb
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\EntityFramework.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\EntityFramework.SqlServer.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.Web.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Helpers.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Mvc.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Razor.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.Razor.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\EntityFramework.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\EntityFramework.SqlServer.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.Web.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Razor.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.Razor.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Helpers.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Mvc.xml
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\obj\Debug\WorldTour.csprojResolveAssemblyReference.cache
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\obj\Debug\WorldTour.dll
+C:\Users\Christos\documents\visual studio 2015\Projects\WorldTour\WorldTour\obj\Debug\WorldTour.pdb
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\ApplicationInsights.config
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\csc.exe
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\vbc.exe
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\VBCSCompiler.exe
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\WorldTour.dll.config
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\WorldTour.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\WorldTour.pdb
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\EntityFramework.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\EntityFramework.SqlServer.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.AI.Web.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Helpers.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Mvc.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Razor.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Webpages.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Webpages.Razor.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\EntityFramework.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\EntityFramework.SqlServer.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.AI.Web.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Razor.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Webpages.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Webpages.Razor.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Helpers.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\bin\System.Web.Mvc.xml
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\obj\Debug\WorldTour.Migrations.init.resources
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\obj\Debug\WorldTour.csproj.GenerateResource.Cache
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\obj\Debug\WorldTour.dll
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\obj\Debug\WorldTour.pdb
+C:\Users\Theo\Documents\GitHub\WorldTour\WorldTour\obj\Debug\WorldTour.csprojResolveAssemblyReference.cache
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\ApplicationInsights.config
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\csc.exe
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\vbc.exe
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\VBCSCompiler.exe
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\WorldTour.dll.config
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\WorldTour.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\WorldTour.pdb
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\EntityFramework.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\EntityFramework.SqlServer.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.Web.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Helpers.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Mvc.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Razor.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.Razor.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\EntityFramework.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\EntityFramework.SqlServer.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.Web.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Razor.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Webpages.Razor.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Helpers.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\bin\System.Web.Mvc.xml
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\obj\Debug\WorldTour.csprojResolveAssemblyReference.cache
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\obj\Debug\WorldTour.dll
+C:\Users\Theo\Documents\Visual Studio 2015\Projects\WorldTour\WorldTour\obj\Debug\WorldTour.pdb
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\ApplicationInsights.config
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\csc.exe
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\vbc.exe
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\VBCSCompiler.exe
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\WorldTour.dll.config
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\WorldTour.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\WorldTour.pdb
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\EntityFramework.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\EntityFramework.SqlServer.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.AI.Web.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Helpers.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Mvc.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Razor.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Webpages.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Webpages.Razor.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\EntityFramework.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\EntityFramework.SqlServer.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.AI.Web.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Razor.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Webpages.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Webpages.Razor.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Helpers.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\bin\System.Web.Mvc.xml
+C:\Users\Theo\Desktop\WorldTour\WorldTour\obj\Debug\WorldTour.dll
+C:\Users\Theo\Desktop\WorldTour\WorldTour\obj\Debug\WorldTour.pdb
+C:\Users\Theo\Desktop\WorldTour\WorldTour\obj\Debug\WorldTour.csprojResolveAssemblyReference.cache
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\obj\Debug\WorldTour.csprojResolveAssemblyReference.cache
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\obj\Debug\WorldTour.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\obj\Debug\WorldTour.pdb
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\ApplicationInsights.config
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\csc.exe
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\vbc.exe
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\VBCSCompiler.exe
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\WorldTour.dll.config
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\WorldTour.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\WorldTour.pdb
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\EntityFramework.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\EntityFramework.SqlServer.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.AI.Web.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Helpers.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Mvc.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Razor.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Webpages.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Webpages.Razor.dll
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\EntityFramework.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\EntityFramework.SqlServer.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.AI.Web.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Razor.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Webpages.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Webpages.Razor.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Helpers.xml
+C:\Users\Theo\Desktop\WorldTour(experimental2)\WorldTour\bin\System.Web.Mvc.xml

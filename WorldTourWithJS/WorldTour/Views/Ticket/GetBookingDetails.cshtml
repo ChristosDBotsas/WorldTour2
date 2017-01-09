@@ -1,0 +1,112 @@
+﻿@model WorldTour.Models.BTViewModel
+
+@{
+    ViewBag.Title = "GetBookingDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><u>Fill in the passenger details</u></h2>
+
+<p class="info">
+    Your booking will be for @Model.Quantity adults 
+    @{ if (Model.Children != 0)
+        {<text> and </text> @Model.Children <text> children. </text> }} at @Model.Class Class.<br />
+    The total cost of your tickets is <span>@Math.Round(Model.Total_Price, 2) &euro;</span>.
+</p>
+<p id="warning">
+    <b>Please fill all the required fields</b>
+</p>
+
+    @using (Html.BeginForm("Checkout", "Bookings", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "Please enter all of your details correctly!", new { @class = "alert-danger" })
+
+        <div class="row">
+            @{
+            for (int i = 0; i < Model.Quantity; i++)
+            {
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Passenger @(i + 1) (Adult)
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <text>First Name:</text>
+                        @Html.TextBoxFor(m => m.Tickets[i].FirstName, new { required = "required" })<br />
+                        @Html.ValidationMessageFor(model => model.Tickets[i].FirstName, "", new { @class = "alert-danger" })<br />
+                        <text>Last Name:</text>
+                        @Html.TextBoxFor(m => m.Tickets[i].LastName, new { required = "required" })<br />
+                        @Html.ValidationMessageFor(model => model.Tickets[i].LastName, "", new { @class = "alert-danger" })
+                    </div>
+                </div>
+            </div>
+            }
+
+            for (int i = Model.Quantity; i < Model.Children + Model.Quantity; i++)
+            {
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Passenger @(i + 1) (Child)</h3>
+                    </div>
+                    <div class="panel-body">
+                        <text>First Name:</text>
+                        @Html.TextBoxFor(m => m.Tickets[i].FirstName, new { required = "required" })<br />
+                        @Html.ValidationMessageFor(model => model.Tickets[i].FirstName, "", new { @class = "alert-danger" })<br />
+                        <text>Last Name:</text>
+                        @Html.TextBoxFor(m => m.Tickets[i].LastName, new { required = "required" })<br />
+                        @Html.ValidationMessageFor(model => model.Tickets[i].LastName, "", new { @class = "alert-danger" })
+                    </div>
+                </div>
+            </div>
+                }
+            }
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Contact Details</h3>
+                    </div>
+                    <div class="panel-body">
+                        <text> Your Name:</text>
+                        @Html.TextBoxFor(m => m.BookingName, new { required = "required" }) <br />
+                        @Html.ValidationMessageFor(model => model.BookingName, "", new { @class = "alert-danger" })<br />
+                        <text>Your e-mail:</text>
+                        @Html.TextBoxFor(m => m.Email, new { type = "email", required = "required" }) <br />
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "alert-danger" })<br />
+                        <text>(Optional)Your Phone Number:</text>
+                        @Html.TextBoxFor(m => m.Phone, new { type = "tel" }) <br />
+                        @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "alert-danger" })<br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+                @Html.HiddenFor(m => m.FID)
+                @Html.HiddenFor(m => m.RFID)
+                @Html.HiddenFor(m => m.Quantity)
+                @Html.HiddenFor(m => m.Children)
+                @Html.HiddenFor(m => m.Total_Price)
+                @Html.HiddenFor(m => m.Class)
+
+                <input type="submit" value="Go to Payment" class="btn btn-primary" style="margin-bottom:15px;" id="submit"/>
+                }
+
+<script src="~/scripts/waitingfor.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#submit").click(function () {
+            waitingDialog.show("Please wait!");
+            setTimeout(function () {
+                waitingDialog.hide();
+            }, 5000);
+        });
+    });
+</script>

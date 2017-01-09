@@ -1,0 +1,18 @@
+﻿@model WorldTour.Models.SearchViewModel
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <section id="searchBar" class="col-md-12 col-xs-12">
+        @RenderPage("~/Views/Home/SearchBarPartial.cshtml", Model)
+    </section>
+</div>
+
+<div class="row">
+    <section id="carousel" class="col-md-offset-4 col-md-4 col-xs-12">
+        @RenderPage("~/Views/Home/Carousel.cshtml")
+        <a href="@Url.Action("AllOffers")"><input type="button" class="btn btn-primary col-md-offset-4" value="View all offers"/></a>
+    </section>
+</div>

@@ -1,0 +1,89 @@
+﻿body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image:url(../Content/background.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+#header{
+    text-align:left;
+    background-color:#01317c;
+    font-size:14px;
+    color:white;
+    font-style:italic;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
+    width:100%;
+}
+
+#footer {
+    text-align:center;
+    background-color:#01317c;
+    font-size:14px;
+    color:white;
+    font-style:italic;
+    padding:5px;
+    bottom:0;
+    width:100%;
+}
+
+#table-wrapper{
+    position:relative;
+}
+
+#table-scroll{
+    height:300px;
+    overflow:auto;
+    margin-top:20px;
+}
+
+#table-wrapper table *{
+    background:white;
+    color:black;
+    opacity:0.93;
+    
+}
+
+#table-wrapper table thead th .text{
+    
+    margin:12px;
+    text-decoration:underline;
+    /*height:600px;*/
+    width:100%;
+    font-weight: 700;
+    color: black; 
+}
+
+.flightTD td{
+    text-align:center;
+    margin:auto;
+    height:33px;
+}
+
+.text{
+    font-size:20px;
+}
+
+.headerMessage {
+    font-family:'Oswald', sans-serif;
+    font-size:55px;
+    font-weight:400;
+    color:white;
+    margin-left:45px;
+}
+
+/*.scroll {
+    width: 100%;
+}
+    
+.bodyscroll {
+    height: 300px;       
+    overflow-y: auto;    
+    overflow-x: hidden;  
+    display: inline-block;
+    width: 100%;
+    margin:auto;
+}
+*/

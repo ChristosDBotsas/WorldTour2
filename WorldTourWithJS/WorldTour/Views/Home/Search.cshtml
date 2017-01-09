@@ -1,0 +1,202 @@
+﻿@model WorldTour.Models.SearchViewModel
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="searchBar">
+    @RenderPage("~/Views/Home/SearchBarPartial.cshtml", Model)
+</section>
+
+<section id="results">
+    <p>
+        Your search was for @Model.adults adults <text> and </text> @Model.children <text> children, on @Model.classType class.</text>
+    </p>
+    @using (Html.BeginForm("Search", "Home"))
+    {
+        <table class="table table-striped" id="goTable">
+            <thead>
+                <tr>
+                    <th colspan="6">Departure Flights <span>(@Model.DepartureCity to @Model.ArrivalCity)</span> </th>
+                </tr>
+                <tr>
+                    <th>Company</th>
+                    <th>Departure Time</th>
+                    <th>Arrival Time</th>
+                    <th>Available Seats</th>
+                    <th>Total Cost</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    if (Model.resultsGo.Count() >= 0)
+                    {
+                        int a = 0;
+                        foreach (var res in Model.resultsGo)
+                        {
+                            a++;
+                            decimal price;
+                            switch (Model.classType)
+                            {
+                                case "First":
+                                    price = res.Starting_Price * 2;
+                                    break;
+                                case "Business":
+                                    price = res.Starting_Price * (decimal)1.5;
+                                    break;
+                                default:
+                                    price = res.Starting_Price;
+                                    break;
+                            }
+                            <tr class="flightTD">
+                                <td>@res.Company_Name</td>
+                                <td>@res.Departure_Date.ToString("dd/MM/yyyy h:mm tt")</td>
+                                <td>@res.Arrival_Date.ToString("dd/MM/yyyy h:mm tt")</td>
+                                <td>@res.Available_Seats</td>
+                                <td>@Math.Round(price * (decimal)Model.adults + price * (decimal)Model.children * (decimal)0.5, 2)<text>&nbsp;&euro;</text></td>
+                                <td>
+                                    <label for="@res.FlightID" class="btn btn-primary go"></label>
+                                    <input type="radio" name="goFlight" value="@res.FlightID" id="@res.FlightID" required onclick="revealBook('bookButton')" hidden />
+
+                                </td>
+                            </tr>
+                        }
+
+                        if (a == 0)
+                        {
+                            <tr><td colspan="6" class="unavailable">There is no available departure flight</td></tr>
+                        }
+                    }
+                }
+        </table>
+        <div id="alterSelection" class="btn btn-default col-md-offset-2 col-md-8" style="display:none">Choose another Departure Flight</div>
+        <div id="goFirst">Select a departure flight to see the Return Flights.</div>
+                    if (Model.resultsReturn.Count() > 0)
+                    {
+                        <table class="table table-striped" id="returnTable" style="display:none">
+                            <thead>
+                                <tr>
+                                    <th colspan="6">Return Flights <span>(@Model.ArrivalCity to @Model.DepartureCity)</span></th>
+                                </tr>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Departure Time</th>
+                                    <th>Arrival Time</th>
+                                    <th>Available Seats</th>
+                                    <th>Total Cost</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (var res in Model.resultsReturn)
+                                    {
+                                        decimal price;
+                                        switch (Model.classType)
+                                        {
+                                            case "First":
+                                                price = res.Starting_Price * 2;
+                                                break;
+                                            case "Business":
+                                                price = res.Starting_Price * (decimal)1.5;
+                                                break;
+                                            default:
+                                                price = res.Starting_Price;
+                                                break;
+                                        }
+                                        <tr class="flightTD">
+                                            <td>@res.Company_Name</td>
+                                            <td>@res.Departure_Date.ToString("dd/MM/yyyy h:mm tt")</td>
+                                            <td>@res.Arrival_Date.ToString("dd/MM/yyyy h:mm tt")</td>
+                                            <td>@res.Available_Seats</td>
+                                            <td>@Math.Round(price * (decimal)Model.adults + price * (decimal)Model.children * (decimal)0.5, 2)<text>&nbsp;&euro;</text></td>
+                                            <td>
+                                                <label for="@res.FlightID" class="btn btn-primary return"></label>
+                                                <input type="radio" name="returnFlight" id="@res.FlightID" value="@res.FlightID" required hidden />
+
+                                            </td>
+                                        </tr>
+                                    }
+
+                                }
+                            </tbody>
+                        </table>
+                                    }
+                                    else
+                                    {
+                                        <table>
+                                            <tr><td colspan="6" class="unavailable">There is no available return flight</td></tr>
+                                        </table>
+                                    }
+                                    <input type="hidden" name="classType" value="@Model.classType" />
+                                    <input type="hidden" name="children" value="@Model.children" />
+                                    <input type="hidden" name="adults" value="@Model.adults" />
+                                    <input type="submit" value="Book Now!" class="btn btn-success btn-lg" name="bookButton" id="bookButton" />
+
+                                    }
+</section>
+
+
+
+<script>
+    $(document).ready(function () {
+        $(".go").text("Select");
+        $(".go").click(function () {
+            if ($(".go").hasClass("btn-success")) {
+                $(".go").removeClass("btn-success").addClass("btn-primary").text("Select");
+            }
+            $(this).removeClass("btn-primary").addClass("btn-success").text("Selected");
+            $("#goFirst").hide();
+            $("#returnTable, #bookButton").show();
+            
+            var selectedDate = $(this).closest('tr').find('td:eq(2)').text();
+            var dateTimeParts = selectedDate.split(' ');
+            var dateParts = dateTimeParts[0].split('/');
+            var timeParts = dateTimeParts[1].split(':');
+            if (dateTimeParts[2] == 'μμ') {
+                timeParts[0] = parseInt(timeParts[0], 10) + 12;
+            }
+            var date = new Date(dateParts[2], parseInt(dateParts[1] - 1, 10), dateParts[0], timeParts[0], timeParts[1]);
+            $("#returnTable tbody tr").each(function () {
+                var returnDate = $(this).closest('tr').find('td:eq(1)').text();
+                var returnDateTimeParts = returnDate.split(' ');
+                var returnDateParts = returnDateTimeParts[0].split('/');
+                var returnTimeParts = returnDateTimeParts[1].split(':');
+                if (returnDateTimeParts[2] == 'μμ') {
+                    returnTimeParts[0] = parseInt(returnTimeParts[0], 10) + 12;
+                }
+                var returnDate = new Date(returnDateParts[2], parseInt(returnDateParts[1] - 1, 10), returnDateParts[0], returnTimeParts[0], returnTimeParts[1]);
+                if (returnDate < date) {
+                    $(this).closest('tr').hide();
+                }
+                else {
+                    $(this).closest('tr').show();
+                }
+            });
+            $("#goTable tbody tr").hide();
+            $(this).closest('tr').show();
+            $('#alterSelection').show();
+        });
+    });
+
+    $(document).ready(function () {
+        $(".return").text("Select");
+        $(".return").click(function () {
+            if ($(".return").hasClass("btn-success")) {
+                $(".return").removeClass("btn-success").addClass("btn-primary").text("Select");
+            }
+            $(this).removeClass("btn-primary").addClass("btn-success").text("Selected");
+        });
+    });
+
+    $(document).ready(function () {
+        $('#alterSelection').click(function () {
+            $(this).hide();
+            $("#goTable tbody tr").show();
+        });
+    });
+</script>
+
+
